@@ -163,6 +163,14 @@ function addGiftItem(data) {
     if (existingStreakItem.length) {
         existingStreakItem.replaceWith(html);
     } else {
+		if(document.title === '3D Random Image Slider'){
+		$('img.gbr1').attr('src',data.profilePictureUrl);
+		$('img.gbr2').attr('src',data.profilePictureUrl);
+		$('img.gbr3').attr('src',data.profilePictureUrl);
+		$('img.gbr4').attr('src',data.profilePictureUrl);
+		$('img.gbr5').attr('src',data.profilePictureUrl);
+		$('img.gbr6').attr('src',data.profilePictureUrl);
+		}else{
 		$('figure.gift>img').attr('src',data.profilePictureUrl);
 		let nama = data.nickname;
 		let arnama = nama.split(" ");
@@ -175,8 +183,8 @@ function addGiftItem(data) {
 		}
 		$('figure.gift>figcaption>h3').html(nama);
 		//$('figure.gift>figcaption>h4').html('Gift (' +data.giftName+ ')');
-		data.giftPictureUrl
         //container.append(html);
+		}
     }
 
     container.stop();
