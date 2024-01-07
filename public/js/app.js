@@ -182,7 +182,7 @@ function addGiftItem(data) {
 			nama = arnama[0] + " <span></span>";
 		}
 		$('figure.gift>figcaption>h3').html(nama);
-		//$('figure.gift>figcaption>h4').html('Gift (' +data.giftName+ ')');
+		$('figure.gift>figcaption>h4').html(data.giftName);
         //container.append(html);
 		}
     }
