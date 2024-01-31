@@ -139,7 +139,7 @@
       </div>
 <center>
 
-    <button class="btn btn-primary" style="position: absolute;margin-top:1000px;margin-left:-60px" onclick="openmodal()">PENGATURAN</button>
+    <button class="btn btn-primary" id="setan" style="position: absolute;margin-top:1000px;margin-left:-60px" onclick="openmodal()">PENGATURAN</button>
     <br><br>
 </center>
    
@@ -233,8 +233,10 @@ function petunjuk(){
 
             if (!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
                 requestFullScreen.call(docEl);
+				document.getElementById("setan").style.visibility = "hidden";
             } else {
                 exitFullScreen.call(doc);
+				document.getElementById("setan").style.visibility = "visible";
             }
         }
      
