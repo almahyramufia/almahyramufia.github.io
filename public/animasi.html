@@ -115,7 +115,7 @@
    </head>
    <body style="background-size: cover;">
       <div id="petunjuk">
-         <h3>OKE KEREN😎!!<br> TOMBOL PENGATURAN <br> ADA DIBAWAH 😊</h3>
+         <h3>OKE KEREN馃槑!!<br> TOMBOL PENGATURAN <br> ADA DIBAWAH 馃槉</h3>
       </div>
       <div id="animation-container">
          <!-- Animasi foto akan ditampilkan di sini -->
@@ -142,6 +142,24 @@
    </body>
 </html>
 <script>  
+	function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex > 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
    setTimeout(() => {
      openmodal();
      // masukanpoto();
@@ -149,25 +167,26 @@
    }, 500);
    
    function masukanpoto(){
-     var img = "https://img.freepik.com/premium-vector/tik-tok-logo_578229-290.jpg";
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
-     addPhoto("small",img);
+     var img = ["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg","7.jpeg","8.jpeg","9.jpeg","10.jpeg"];
+	 shuffle(img);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
+     addPhoto("small","avatar/"+img[0]);
    }
    function tutupmodal(){
     
@@ -770,8 +789,8 @@
    var dropdown = document.getElementById("uniqueIdInput"); 
    for (var i = 0; i < opciones.length; i++) {
       var opcion = document.createElement("option");
-      opcion.value = opciones[i];  // Valor de la opción (puedes usar i u otro valor)
-      opcion.text = opciones[i];  // Texto visible de la opción
+      opcion.value = opciones[i];  // Valor de la opci贸n (puedes usar i u otro valor)
+      opcion.text = opciones[i];  // Texto visible de la opci贸n
       dropdown.appendChild(opcion);
    }
    
@@ -901,8 +920,8 @@
    //  var dropdown = document.getElementById("uniqueIdInput"); 
    //   for (var i = 0; i < opciones.length; i++) {
    //       var opcion = document.createElement("option");
-   //       opcion.value = opciones[i];  // Valor de la opción (puedes usar i u otro valor)
-   //       opcion.text = opciones[i];  // Texto visible de la opción
+   //       opcion.value = opciones[i];  // Valor de la opci贸n (puedes usar i u otro valor)
+   //       opcion.text = opciones[i];  // Texto visible de la opci贸n
    //       dropdown.appendChild(opcion);
    //   }
    //  }, 1000);
@@ -913,8 +932,8 @@
    var dropdown = document.getElementById("uniqueIdInput"); 
     for (var i = 0; i < opciones.length; i++) {
         var opcion = document.createElement("option");
-        opcion.value = opciones[i];  // Valor de la opción (puedes usar i u otro valor)
-        opcion.text = opciones[i];  // Texto visible de la opción
+        opcion.value = opciones[i];  // Valor de la opci贸n (puedes usar i u otro valor)
+        opcion.text = opciones[i];  // Texto visible de la opci贸n
         dropdown.appendChild(opcion);
     }
    }, 2000);
