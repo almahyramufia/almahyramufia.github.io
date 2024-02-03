@@ -167,7 +167,9 @@
    
    function masukanpoto(){
      var img = ["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg","7.jpeg","8.jpeg","9.jpeg","10.jpeg"];
+	 var ukrn = ["small","medium","large"];
 	 shuffle(img);
+	 shuffle(ukrn);
      addPhoto("small","avatar/"+img[0]);
      addPhoto("small","avatar/"+img[0]);
      addPhoto("small","avatar/"+img[0]);
@@ -176,7 +178,7 @@
      addPhoto("medium","avatar/"+img[2]);
      addPhoto("medium","avatar/"+img[2]);
      addPhoto("small","avatar/"+img[0]);
-     addPhoto("large","avatar/"+img[1]);
+     addPhoto(ukrn[0],"avatar/"+img[1]);
      addPhoto("small","avatar/"+img[0]);
      addPhoto("small","avatar/"+img[0]);
      addPhoto("small","avatar/"+img[3]);
