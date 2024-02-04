@@ -40,7 +40,14 @@ svg text {
 	}
 }
 
-.wrapper {background-color: #FFFFFF};
+.wrapper {
+	background-color: #FFFFFF
+	 position: absolute; 
+            top: 0; 
+            left: 0; 
+            bottom: 0; 
+            z-index: -1;
+	 };
 
       </style>
       <script>
@@ -145,11 +152,13 @@ svg text {
          <h3>OKE KEREN馃槑!!<br> TOMBOL PENGATURAN <br> ADA DIBAWAH 馃槉</h3>
       </div>
       <div id="animation-container">
-	      <svg>
+	     <div class="wrapper">
+	<svg>
 		<text x="50%" y="50%" dy=".35em" text-anchor="middle">
 			G1 FT UNTUK TUTUPI FOTO LAWAN
 		</text>
-	     </svg>
+	</svg>
+</div>
          <!-- Animasi foto akan ditampilkan di sini -->
       </div>
       <center>
