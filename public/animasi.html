@@ -468,8 +468,8 @@
        photo.style.zIndex = '777777';
 	   watermark([img])
 	  .image(text.center('watermark.js', '48px Josefin Slab', '#fff', 0.5))
-	  .then(function (photo) {
-		document.getElementById('animation-container').appendChild(photo);
+	  .then(function (img) {
+		document.getElementById('animation-container').appendChild(img);
 	  });
      } else if (size === 'large') {
        photo.style.width = '250px';
