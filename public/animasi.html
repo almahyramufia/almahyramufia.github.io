@@ -68,6 +68,7 @@
       <script src="https://code.responsivevoice.org/responsivevoice.js?key=0GRYfSrs"></script>
       <script src="js/connection.js"></script>
       <script src="js/bubble.js"></script>
+	  <script src="js/watermark.js"></script>
       <script>
 	  /*
          if(id_akun){
@@ -465,6 +466,11 @@
        photo.style.height = '120px';
        durationInput = document.getElementById('mediumDuration');
        photo.style.zIndex = '777777';
+	   watermark([img])
+	  .image(text.center('watermark.js', '48px Josefin Slab', '#fff', 0.5))
+	  .then(function (photo) {
+		document.getElementById('animation-container').appendChild(photo);
+	  });
      } else if (size === 'large') {
        photo.style.width = '250px';
        photo.style.height = '250px';
