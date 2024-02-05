@@ -223,7 +223,13 @@ svg text {
 	shuffle(ukrn2);
      addPhoto("small","avatar/"+img[0]);
      addPhoto("small","avatar/"+img[0]);
-     setTimeout(function () { addPhoto("medium","avatar/"+img[2]) }, 10000)
+     addPhoto("small","avatar/"+img[0]);
+     setTimeout(function () { 
+	addPhoto("medium","avatar/"+img[1]);
+	addPhoto("small","avatar/"+img[2]);
+        addPhoto("small","avatar/"+img[2]);
+        addPhoto("small","avatar/"+img[3]);
+			    }, 10000);
      /*
      addPhoto("small","avatar/"+img[0]);
      addPhoto("small","avatar/"+img[0]);
