@@ -215,8 +215,9 @@ svg text {
 	 var ukrn2 = ["small","medium"];
 	 shuffle(img);
 	 shuffle(ukrn);
-	shuffle(ukrn2);
-     addPhoto("small","avatar/"+img[0]);
+	//shuffle(ukrn2);
+     addPhoto(ukrn2[0],"avatar/"+img[0]);
+     /*
      addPhoto("small","avatar/"+img[0]);
      addPhoto("small","avatar/"+img[0]);
      addPhoto("small","avatar/"+img[0]);
@@ -234,6 +235,7 @@ svg text {
      addPhoto("small","avatar/"+img[4]);
      addPhoto("small","avatar/"+img[4]);
      addPhoto("small","avatar/"+img[0]);
+	   */
    }
    function tutupmodal(){
     
@@ -252,7 +254,7 @@ svg text {
 	 */
      setInterval(() => {
        masukanpoto();
-     }, 45000);
+     }, 25000);
    }
    
        function toggleFullScreen() {
