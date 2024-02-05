@@ -225,11 +225,17 @@ svg text {
      addPhoto("small","avatar/"+img[0]);
      addPhoto("small","avatar/"+img[0]);
      setTimeout(function () { 
-	addPhoto("medium","avatar/"+img[1]);
 	addPhoto("small","avatar/"+img[2]);
         addPhoto("small","avatar/"+img[2]);
         addPhoto("small","avatar/"+img[3]);
 			    }, 10000);
+     setTimeout(function(){
+	addPhoto("medium","avatar/"+img[1]);
+     }, 20000);
+
+     setTimeout(function(){
+	addPhoto("large","avatar/"+img[4]);
+     }, 60000);
      /*
      addPhoto("small","avatar/"+img[0]);
      addPhoto("small","avatar/"+img[0]);
