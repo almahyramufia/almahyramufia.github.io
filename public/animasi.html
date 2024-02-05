@@ -229,13 +229,6 @@ svg text {
         addPhoto("small","avatar/"+img[2]);
         addPhoto("small","avatar/"+img[3]);
 			    }, 10000);
-     setTimeout(function(){
-	addPhoto("medium","avatar/"+img[1]);
-     }, 20000);
-
-     setTimeout(function(){
-	addPhoto("large","avatar/"+img[4]);
-     }, 120000);
      /*
      addPhoto("small","avatar/"+img[0]);
      addPhoto("small","avatar/"+img[0]);
@@ -274,6 +267,16 @@ svg text {
      setInterval(() => {
        masukanpoto();
      }, 20000);
+     setInterval(() => {
+	var img2 = ["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg","7.jpeg","8.jpeg","9.jpeg","10.jpeg"];
+	shuffle(img2);
+       addPhoto("medium","avatar/"+img2[1]);
+     }, 40000);
+     setInterval(() => {
+	var img3 = ["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg","7.jpeg","8.jpeg","9.jpeg","10.jpeg"];
+	shuffle(img3);
+       addPhoto("large","avatar/"+img3[1]);
+     }, 120000);
    }
    
        function toggleFullScreen() {
